@@ -3,8 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div style="width: 500px; margin: auto; text-align: justify;"></div>
+    <<style>
+    form {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+</style>
     <title>Contact - My Shop</title>
 </head>
 
@@ -18,17 +26,43 @@
     <main class="content">
         <h2>Contact Us</h2>
 
+        <form>
+    <fieldset>
+        <legend>Your Details</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <br><br>
+
+        <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="product">Product Question</option>
+            <option value="order">Order Status</option>
+            <option value="wholesale">Wholesale Enquiry</option>
+            <option value="other">Something Else</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Send message</button>
+    </fieldset>
+</form>
+
         <p>
             If you have questions, suggestions, or concerns about our products,
             feel free to contact us using the information below.
         </p>
-
-        <h3>Contact Information</h3>
-
-        <ul>
-            <li>Email: jerikangeles@gmail.com</li>
-            <li>Phone: 0976-405-1520</li>
-        </ul>
 
         <h3>Business Hours</h3>
 
