@@ -135,16 +135,11 @@ label {
     display: block;
     margin-top: 15px;
     font-weight: bold;
-}
-
-input,
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
 }
 
 textarea {
