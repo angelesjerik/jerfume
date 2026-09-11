@@ -149,3 +149,161 @@ footer {
         grid-template-columns: 1fr !important;
     }
 }
+
+/* GENERAL STYLE */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #add8e6;
+    color: #243746;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.shop-header {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d8e8ed;
+}
+
+.shop-header h1 {
+    margin: 0 0 15px;
+    font-size: 32px;
+    color: #243746;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243746;
+    padding: 8px 18px;
+    border: 1px solid #9ccbd8;
+    border-radius: 20px;
+    background-color: #f5fcff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #243746;
+    color: white;
+}
+
+/* ABOUT CARD */
+.about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #e8f7fb;
+}
+
+/* TEXT */
+.about-text {
+    flex: 1.3;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #243746;
+    margin-top: 0;
+}
+
+.about-text h3 {
+    font-size: 23px;
+    color: #198754;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #4a5a64;
+    text-align: justify;
+}
+
+/* STORY SECTION */
+.story-section {
+    background-color: white;
+    margin-top: 35px;
+    padding: 35px 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.story-section h2 {
+    color: #198754;
+    margin-top: 10px;
+}
+
+.story-section p {
+    color: #4a5a64;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #36515c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .about-card {
+        flex-direction: column;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .about-image img {
+        max-width: 230px;
+        height: 270px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: justify;
+    }
+
+    .story-section {
+        padding: 25px;
+    }
+
+}
