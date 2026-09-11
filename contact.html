@@ -1,80 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style>
-    form {
-        width: 500px;
-        margin: 0 auto;
-    }
-
-    fieldset {
-        padding: 20px;
-    }
-</style>
-    <title>Contact - My Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jerfume Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header class="top">
-        <h1>My Shop</h1>
+    <header class="shop-header">
+        <h1>🌸 Jerfume Shop</h1>
 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
-    <main class="content">
-        <h2>Contact Us</h2>
+    <main class="contact-page">
 
-        <form>
-    <fieldset>
-        <legend>Your Details</legend>
+        <section class="contact-hero">
+            <h2>Get in Touch</h2>
+            <p>
+                Have questions about our perfumes? Feel free to send us
+                a message. We would love to hear from you!
+            </p>
+        </section>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+        <section class="contact-container">
 
-        <br><br>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>
+                    You can contact us for product inquiries, recommendations,
+                    or other concerns.
+                </p>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+                <div class="info-item">
+                    <strong>📧 Email</strong>
+                    <p>jerfumeshop@gmail.com</p>
+                </div>
 
-        <br><br>
+                <div class="info-item">
+                    <strong>📱 Phone</strong>
+                    <p>0912 345 6789</p>
+                </div>
 
-        <label for="subject">Subject</label>
-        <select id="subject" name="subject">
-            <option value="product">Product Question</option>
-            <option value="order">Order Status</option>
-            <option value="wholesale">Wholesale Enquiry</option>
-            <option value="other">Something Else</option>
-        </select>
+                <div class="info-item">
+                    <strong>📍 Location</strong>
+                    <p>Manila, Philippines</p>
+                </div>
 
-        <br><br>
+                <div class="info-item">
+                    <strong>🕒 Business Hours</strong>
+                    <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
+                </div>
+            </div>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
 
-        <br><br>
+                <form>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
 
-        <button type="submit">Send message</button>
-    </fieldset>
-</form>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
 
-        <p>
-            If you have questions, suggestions, or concerns about our products,
-            feel free to contact us using the information below.
-        </p>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject">
 
-        <h3>Business Hours</h3>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
 
-        <p>
-            Monday - Saturday: 9:00 AM - 9:00 PM
-        </p>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </section>
+
     </main>
 
-    <footer class="bottom">
-        <p>&copy; 2026 My Shop. All rights reserved.</p>
+    <footer>
+        <p>© 2026 Jerfume Shop. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
-```
