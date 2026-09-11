@@ -1,120 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
-    <title>Atlantis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlantis | Jerfume Shop</title>
     <link rel="stylesheet" href="../style.css">
+</head>
+<body>
 
+    <header class="shop-header">
+        <h1>🌸 Jerfume Shop</h1>
 
-<nav>
-  <ul>
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-  </ul>
-</nav>
-<h2>Atlantis</h2>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
 
-<div class="product-container">
+    <main class="product-page">
 
-    <div class="product-image">
-        <img src="../atlantis.jpg" alt="Atlantis Product">
-    </div>
+        <section class="product-card">
 
-    <div class="product-description">
+            <!-- PICTURE SA KALIWA -->
+            <div class="product-image">
+                <img src="../atlantis.jpg" alt="Atlantis Perfume">
+            </div>
 
-        <h2>Atlantis</h2>
+            <!-- INFORMATION SA KANAN -->
+            <div class="product-content">
 
-        <h3>About the Product</h3>
-        <p>
-            Atlantis is a light and refreshing fragrance suitable for
-            everyday use. It provides a fresh and clean scent that is
-            perfect for school, work, and daily activities.
-        </p>
+                <h2>Atlantis</h2>
 
-        <h3>Product Information</h3>
-        <ul>
-           <font color=brown> <li><strong>Product:</strong> Atlantis Body Spray</li>
-            <li><strong>Type:</strong> Fragrance / Body Spray</li>
-            <li><strong>Scent:</strong> Fresh and refreshing</li>
-            <li><strong>Best For:</strong> Everyday use</li></font>
-        </ul>
+                <h3>About the Product</h3>
 
-        <h3>Why Choose Atlantis?</h3>
-        <ul>
-            <font color=brown><li>Fresh and refreshing scent</li>
-            <li>Suitable for everyday activities</li>
-            <li>Easy to carry and use</li></font>
-        </ul>
+                <p class="description">
+                    Atlantis is a light and refreshing fragrance suitable
+                    for everyday use. It provides a fresh and clean scent
+                    that is perfect for school, work, and daily activities.
+                </p>
 
-    </div>
+                <h3>Product Information</h3>
 
-</div>
+                <div class="product-info">
 
+                    <div class="info-row">
+                        <span>Product</span>
+                        <p>Atlantis Body Spray</p>
+                    </div>
 
+                    <div class="info-row">
+                        <span>Price</span>
+                        <p>₱115</p>
+                    </div>
 
-<section
-  class="order-form">
-  <h1>Order Inquiry</h1>
+                    <div class="info-row">
+                        <span>In Stock</span>
+                        <p>Yes</p>
+                    </div>
 
-  <form>
-    <fieldset>
-      <legend>
-        Order Details
-      </legend>
-      <label 
-      for="quantity">Quantity</label>
-      <input type="number"
-      id="quantity" name="quantity"
-      min="1" max="20" required>
+                    <div class="info-row">
+                        <span>Type</span>
+                        <p>Fragrance / Body Spray</p>
+                    </div>
 
-<fieldset>
-        <legend>Quantity</legend>
-        <label>
-          <input type="radio"
-          name="delivery" value ="pick up" required>
-          <font color = blue>Pick up</font>
-        </label>
-        <label>
-          <input type="radio"
-          name="delivery" value ="standard" required>
-          <font color = blue>Standard Delivery</font>
-          </label>
-          <label>
-          <input type="radio"
-          name="delivery" value ="Express" required>
-         <font color = blue> Express Delivery</font>
-          </label>
-    </fieldset>
-    <fieldset>
-<legend>Optional Extras</legend></fieldset>
-<label>
-  <input type="checkbox"
-  name="extras" value="gift">
-  <font color = blue>Gift Wrapping</font>
-</label>
-<label>
-  <input type="checkbox"
-  name="extras" value="express-handling">
-  <font color = blue>Express Handling</font>
-</label>
-<label>
-  <input type="checkbox"
-  name="extras" value="note">
-  <font color = blue>Add a Gift Note</font> 
-</label>
-</fieldset>
-<font color = blue><label for="email"> Contact Email</label></font>
-<input type="email" id="email" name="email" required>
-<br><br>
+                    <div class="info-row">
+                        <span>Scent</span>
+                        <p>Fresh and refreshing</p>
+                    </div>
 
-<button type="submit">Order Inquiry</button>
-</fieldset>
-  </form>
-</section>
+                </div>
 
-   
-<footer class="bottom">
-        <p>&copy; 2026 My Shop. All rights reserved.</p>
+                <h3>Why Choose Atlantis?</h3>
+
+                <ul class="benefits">
+                    <li>Fresh and refreshing scent</li>
+                    <li>Suitable for everyday activities</li>
+                    <li>Easy to carry and use</li>
+                </ul>
+
+                <!-- ORDER FORM -->
+                <form class="order-form">
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+
+                    <fieldset>
+                        <legend>🚚 Delivery Method</legend>
+
+                        <label>
+                            <input type="radio" name="delivery" checked>
+                            Standard Delivery
+                        </label>
+
+                        <label>
+                            <input type="radio" name="delivery">
+                            Express Delivery — ₱50
+                        </label>
+
+                        <label>
+                            <input type="radio" name="delivery">
+                            Store Pickup — ₱0
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>🎁 Optional Extras</legend>
+
+                        <label>
+                            <input type="checkbox">
+                            Gift Wrapping — ₱30
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Express Handling — ₱50
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Personal Message — ₱20
+                        </label>
+                    </fieldset>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="you@example.com">
+
+                    <button type="submit">Submit Order</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Jerfume Shop. All rights reserved.
     </footer>
-</header>
+
+</body>
+</html>

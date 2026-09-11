@@ -1,213 +1,151 @@
-/* =========================
-   VARIABLES
-========================= */
+/* FORCE ATLANTIS PRODUCT DESIGN */
 
-:root {
-    --brand-color: #8b5e3c;
-    --brand-dark: #5c3d28;
-    --accent-color: #c9a66b;
-    --dark-color: #241ba7;
-    --muted-color: #6b625a;
-    --light-background: #e6a659;
-    --white: #ffffff;
-}
-
-
-/* =========================
-   BASE STYLES
-========================= */
-
-* {
-    box-sizing: border-box;
-}
 body {
-    background-color: #F5EBDD;
-    color: #141212;
-    font-family: Arial, sans-serif;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-header {
-    background: var(--brand-color);
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-
-header h1 {
     margin: 0;
+    background-color: #add8e6 !important;
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
-/* =========================
-   PRODUCT INFORMATION
-========================= */
-
-.product-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.product-image {
-    flex: 1;
+/* Header */
+.shop-header {
+    background-color: white !important;
     text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.shop-header h1 {
+    margin: 0 0 20px;
+    color: #222;
+}
+
+.shop-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.shop-header nav a {
+    color: #198754;
+    text-decoration: none;
+}
+
+/* Main */
+.product-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* White card */
+.product-card {
+    display: grid !important;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 45px;
+    background-color: white !important;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.product-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .product-image img {
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px;
+    height: 430px;
+    object-fit: contain;
     border-radius: 12px;
 }
 
-.product-description {
-    flex: 1;
-}
-
-.product-description h2 {
-    font-size: 32px;
-    margin-top: 0;
-}
-
-.product-description h3 {
-    color: var(--brand-color);
-    margin-top: 20px;
-}
-
-.product-description p {
-    color: var(--muted-color);
-}
-
-.product-description ul {
-    padding-left: 20px;
-}
-
-.product-description li {
-    margin-bottom: 8px;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav ul { list-style: none; margin: 0; padding: 0; }
-nav li { display: inline-block; margin-right: 16px; }
-nav a { color: #6FD6A8; text-decoration: none; font-size: 0.9rem; }
-nav a:hover { text-decoration: underline; }
-
-/* =========================
-   MAIN CONTENT
-========================= */
-
-main {  
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-h2 {
-    color: var(--brand-color);
-}
-
-p {
-    color: var(--muted-color);
-}
-
-
-/* =========================
-   PLACE CARDS
-========================= */
-
-.card {
-  background: var(--paper);
-  border-left: 4px solid var(--brand);
-  border-radius: 8px;
-  padding: 14px 16px;
-  margin-bottom: 12px;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-
-/* =========================
-   CONTACT FORM
-========================= */
-
-form {
-    max-width: 650px;
-    margin: 30px auto;
-}
-
-fieldset {
-    background: white;
-    border: none;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-legend {
-    background: var(--brand-color);
-    color: white;
-    padding: 8px 18px;
-    border-radius: 20px;
-}
-
-label {
-    display: block;
-    margin-top: 15px;
-    font-weight: bold;
-    
-input:focus,
-textarea:focus {
-  outline: 3px solid var(--brand);
-  outline-offset: 2px;
-}
-
-textarea {
-    min-height: 120px;
-}
-
-button {
-    background: var(--brand-color);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    opacity: 0.85;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: var(--dark-color);
-    color: white;
+/* Content */
+.product-content h2 {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    color: #198754;
+    font-size: 32px;
+    margin: 0 0 25px;
 }
 
-footer p {
+.product-content h3 {
+    text-align: center;
+    color: #198754;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.description {
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Information */
+.info-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.info-row span {
+    color: #198754;
+    font-weight: bold;
+}
+
+.info-row p {
+    margin: 0;
+}
+
+/* Form */
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-form > input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.order-form fieldset {
+    border: 1px solid #d9e5e8;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fafdff;
+}
+
+.order-form fieldset label {
+    display: block;
+    margin: 15px 0;
+}
+
+.order-form button {
+    padding: 14px;
+    background-color: #198754;
     color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .product-card {
+        grid-template-columns: 1fr !important;
+    }
 }
