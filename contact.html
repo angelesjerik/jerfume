@@ -4,87 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact | Jerfume Shop</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="shop-header">
-        <h1>🌸 Jerfume Shop</h1>
+    <header>
+        <a href="index.html" class="logo">Jerfume Shop</a>
 
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
-    <main class="contact-page">
+
+    <main>
 
         <section class="contact-hero">
-            <h2>Get in Touch</h2>
+
+            <p class="small-title">GET IN TOUCH</p>
+
+            <h1>Contact Us</h1>
+
             <p>
-                Have questions about our perfumes? Feel free to send us
-                a message. We would love to hear from you!
+                Have a question about our perfumes?
+                We'd love to hear from you.
             </p>
+
         </section>
+
 
         <section class="contact-container">
 
+            <!-- CONTACT INFORMATION -->
+
             <div class="contact-info">
-                <h2>Contact Information</h2>
+
+                <h2>Let's Talk</h2>
+
                 <p>
-                    You can contact us for product inquiries, recommendations,
-                    or other concerns.
+                    Feel free to contact us if you have questions,
+                    suggestions, or inquiries about our products.
                 </p>
 
-                <div class="info-item">
-                    <strong>📧 Email</strong>
-                    <p>jerfumeshop@gmail.com</p>
-                </div>
 
                 <div class="info-item">
-                    <strong>📱 Phone</strong>
-                    <p>0912 345 6789</p>
+                    <span>📧</span>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>jerfumeshop@gmail.com</p>
+                    </div>
                 </div>
 
-                <div class="info-item">
-                    <strong>📍 Location</strong>
-                    <p>Manila, Philippines</p>
-                </div>
 
                 <div class="info-item">
-                    <strong>🕒 Business Hours</strong>
-                    <p>Monday – Saturday, 9:00 AM – 6:00 PM</p>
+                    <span>📱</span>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>0912 345 6789</p>
+                    </div>
                 </div>
+
+
+                <div class="info-item">
+                    <span>📍</span>
+
+                    <div>
+                        <h3>Location</h3>
+                        <p>Metro Manila, Philippines</p>
+                    </div>
+                </div>
+
             </div>
 
+
+            <!-- CONTACT FORM -->
+
             <div class="contact-form">
-                <h2>Send Us a Message</h2>
+
+                <h2>Send a Message</h2>
 
                 <form>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="Enter your name">
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" placeholder="Enter your email">
+                    <label for="name">Your Name</label>
 
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Enter subject">
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                    >
+
+
+                    <label for="email">Your Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                    >
+
 
                     <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
                 </form>
+
             </div>
 
         </section>
 
     </main>
 
+
     <footer>
-        <p>© 2026 Jerfume Shop. All rights reserved.</p>
+        © 2026 Jerfume Shop. All rights reserved.
     </footer>
 
 </body>

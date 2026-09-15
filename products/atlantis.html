@@ -1,78 +1,71 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlantis | Jerfume Shop</title>
+
+    <title>Atlantis | Jerfume</title>
+
     <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
 
-    <header class="shop-header">
-        <h1>🌸 Jerfume Shop</h1>
+    <header class="site-header">
+
+        <h1>Jerfume</h1>
 
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../about.html">About</a>
-            <a href="../contact.html">Contact</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
         </nav>
+
     </header>
 
-    <main class="product-page">
 
-        <section class="product-card">
+    <main class="atlantis-product">
 
-            <!-- PICTURE SA KALIWA -->
-            <div class="product-image">
-                <img src="../atlantis.jpg" alt="Atlantis Perfume">
+        <div class="atlantis-card">
+
+            <div class="atlantis-image">
+
+                <!-- KUNG NASA ROOT FOLDER ANG ATLANTIS IMAGE -->
+                <img src="../Atlantis.jpg" alt="Atlantis Perfume">
+
             </div>
 
-            <!-- INFORMATION SA KANAN -->
-            <div class="product-content">
 
-                <h2>Atlantis</h2>
+            <div class="atlantis-details">
 
-                <h3>About the Product</h3>
+                <h1>Atlantis</h1>
 
-                <p class="description">
-                    Atlantis is a light and refreshing fragrance suitable
-                    for everyday use. It provides a fresh and clean scent
-                    that is perfect for school, work, and daily activities.
-                </p>
-
-                <h3>Product Information</h3>
-
-                <div class="product-info">
-
-                    <div class="info-row">
-                        <span>Product</span>
-                        <p>Atlantis Body Spray</p>
-                    </div>
-
-                    <div class="info-row">
-                        <span>Price</span>
-                        <p>₱115</p>
-                    </div>
-
-                    <div class="info-row">
-                        <span>In Stock</span>
-                        <p>Yes</p>
-                    </div>
-
-                    <div class="info-row">
-                        <span>Type</span>
-                        <p>Fragrance / Body Spray</p>
-                    </div>
-
-                    <div class="info-row">
-                        <span>Scent</span>
-                        <p>Fresh and refreshing</p>
-                    </div>
-
+                <div class="detail-row">
+                    <strong>Price</strong>
+                    <em>₱115</em>
                 </div>
 
-                <h3>Why Choose Atlantis?</h3>
+                <div class="detail-row">
+                    <strong>In Stock</strong>
+                    <em>Yes</em>
+                </div>
+
+                <div class="detail-row">
+                    <strong>Type</strong>
+                    <em>Fragrance / Body Spray</em>
+                </div>
+
+                <div class="detail-row">
+                    <strong>Scent</strong>
+                    <em>Fresh and refreshing</em>
+                </div>
+
+
+                <h2>Why Choose Atlantis?</h2>
 
                 <ul class="benefits">
                     <li>Fresh and refreshing scent</li>
@@ -80,66 +73,75 @@
                     <li>Easy to carry and use</li>
                 </ul>
 
-                <!-- ORDER FORM -->
-                <form class="order-form">
 
+                <div class="quantity">
                     <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" min="1" value="1">
 
-                    <fieldset>
-                        <legend>🚚 Delivery Method</legend>
+                    <input
+                        type="number"
+                        id="quantity"
+                        value="1"
+                        min="1"
+                    >
+                </div>
 
-                        <label>
-                            <input type="radio" name="delivery" checked>
-                            Standard Delivery
-                        </label>
 
-                        <label>
-                            <input type="radio" name="delivery">
-                            Express Delivery — ₱50
-                        </label>
+                <div class="product-buttons">
 
-                        <label>
-                            <input type="radio" name="delivery">
-                            Store Pickup — ₱0
-                        </label>
-                    </fieldset>
+                    <button>Add to Cart</button>
 
-                    <fieldset>
-                        <legend>🎁 Optional Extras</legend>
+                    <button>Delivery Method</button>
 
-                        <label>
-                            <input type="checkbox">
-                            Gift Wrapping — ₱30
-                        </label>
+                </div>
 
-                        <label>
-                            <input type="checkbox">
-                            Express Handling — ₱50
-                        </label>
 
-                        <label>
-                            <input type="checkbox">
-                            Personal Message — ₱20
-                        </label>
-                    </fieldset>
+                <fieldset class="extras">
+
+                    <legend>🎁 Optional Extras</legend>
+
+                    <label>
+                        <input type="checkbox">
+                        Gift Wrapping — ₱30
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Express Handling — ₱50
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Personal Message — ₱20
+                    </label>
+
+                </fieldset>
+
+
+                <div class="order">
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="you@example.com">
 
-                    <button type="submit">Submit Order</button>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                    >
 
-                </form>
+                    <button>Submit Order</button>
+
+                </div>
 
             </div>
 
-        </section>
+        </div>
 
     </main>
+
 
     <footer>
         © 2026 Jerfume Shop. All rights reserved.
     </footer>
 
 </body>
+
 </html>
