@@ -1,0 +1,359 @@
+/* ===================================
+   JERFUME SHOP - ABOUT PAGE
+   =================================== */
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    background-color: #a9dce9;
+    color: #173b3b;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+.navbar {
+    width: 100%;
+    background-color: #fffdf7;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid #e7c98c;
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #07594f;
+    text-decoration: none;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* NAV LINKS */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #07594f;
+    text-decoration: none;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c56d55;
+}
+
+nav a.active {
+    color: #c56d55;
+    font-weight: bold;
+}
+
+
+/* ===================================
+   MAIN PAGE
+   =================================== */
+
+.about-page {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 0 30px 60px;
+}
+
+
+/* ===================================
+   HERO
+   =================================== */
+
+.hero {
+    text-align: center;
+
+    padding: 10px 20px 85px;
+}
+
+
+.welcome {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+    letter-spacing: 5px;
+
+    color: #08796d;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    color: #155b4d;
+
+    font-size: 62px;
+
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-text {
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #4c4642;
+
+    font-size: 21px;
+
+    line-height: 1.6;
+}
+
+
+/* ===================================
+   CONTENT BOX
+   =================================== */
+
+.content-box {
+    background-color: #fffdf7;
+
+    border: 2px solid #e7c98c;
+
+    border-radius: 18px;
+
+    padding: 35px 40px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 18px rgba(55, 75, 70, 0.10);
+}
+
+
+.content-box h2 {
+    color: #087b68;
+
+    font-size: 32px;
+
+    margin-bottom: 18px;
+}
+
+
+.content-box p {
+    color: #343f43;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 14px;
+}
+
+
+/* ===================================
+   CARDS
+   =================================== */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 20px;
+}
+
+
+/* CARD */
+
+.card {
+    background-color: #f8f1df;
+
+    border-radius: 12px;
+
+    padding: 28px 20px;
+
+    text-align: center;
+
+    min-height: 190px;
+
+    transition: 0.3s ease;
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 18px rgba(55, 75, 70, 0.15);
+}
+
+
+/* NUMBER */
+
+.number {
+    display: block;
+
+    color: #c56d55;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+
+/* CARD TITLE */
+
+.card h3 {
+    color: #07594f;
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+}
+
+
+/* CARD TEXT */
+
+.card p {
+    color: #4a4641;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin: 0;
+}
+
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+footer {
+    background-color: #07594f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+    }
+
+
+    nav {
+        gap: 18px;
+    }
+
+
+    .hero {
+        padding-bottom: 50px;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .content-box {
+        padding: 28px 22px;
+    }
+
+}
+
+
+/* ===================================
+   SMALL SCREEN
+   =================================== */
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .welcome {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .content-box h2 {
+        font-size: 27px;
+    }
+
+
+    .content-box p {
+        font-size: 16px;
+    }
+
+}

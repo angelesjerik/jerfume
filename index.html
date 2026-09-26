@@ -1,80 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jerfume Shop</title>
-        <link rel="stylesheet" href="style.css">
 
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="site-header">
+<div class="page">
 
-    <h1>Jerfume Shop</h1>
+    <!-- HEADER -->
+    <header class="site-header">
 
-    <nav>
+        <h1>Jerfume Shop</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <h2>🌸 Jerfume Shop</h2>
+
+        <h3>Categories</h3>
+
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products/atlantis.html">Perfume</a></li>
+            <li><li><a href="products/eight.html">Body Spray</li>
+            <li><a href="products/scent.html">Daily scent</a></li>
+        
         </ul>
-    </nav>
 
-</header>
-        <div class="product-container">
+        <h3>Opening Hours</h3>
 
-    <!-- 1. ATLANTIS -->
-    <div class="product-card">
-        <img src="atlantis.jpg" alt="Atlantis">
+        <p>Monday - Saturday</p>
+        <p>9:00 AM - 6:00 PM</p>
 
-        <h2>Atlantis</h2>
-
-        <div class="price">
-            Price: ₱115
-        </div>
+        <h3>Why Shop With Us?</h3>
 
         <p>
-            A lovely fragrance perfect for everyday use.
+            Find affordable and lovely
+            fragrances perfect for
+            everyday use and special
+            occasions.
         </p>
 
-        <a href="products/atlantis.html">View details →</a>
-    </div>
+    </aside>
 
 
-    <!-- 2. DAILY SCENT -->
-    <div class="product-card">
-        <img src="scent.jpg" alt="Daily Scent Perfume">
+    <!-- MAIN -->
+    <main>
 
-        <h2>Daily Scent Perfume</h2>
+        <section class="products">
 
-        <div class="price">
-            Price: ₱75
-        </div>
+            <h1>Our Perfumes</h1>
+
+            <div class="product-container">
+
+
+                <!-- 1. ATLANTIS -->
+                <div class="product-card">
+
+                    <img src="atlantis.jpg" alt="Atlantis">
+
+                    <h2>Atlantis</h2>
+
+                    <div class="price">
+                        Price: ₱115
+                    </div>
+
+                    <p>
+                        A lovely fragrance perfect
+                        for everyday use.
+                    </p>
+
+                    <a href="products/atlantis.html">
+                        View details →
+                    </a>
+
+                </div>
+
+
+                <!-- 2. DAILY SCENT -->
+                <div class="product-card">
+
+                    <img src="scent.jpg"
+                         alt="Daily Scent Perfume">
+
+                    <h2>Daily Scent Perfume</h2>
+
+                    <div class="price">
+                        Price: ₱75
+                    </div>
+
+                    <p>
+                        A light and refreshing
+                        fragrance suitable for
+                        daily activities.
+                    </p>
+
+                    <a href="products/scent.html">
+                        View details →
+                    </a>
+
+                </div>
+
+
+                <!-- 3. EIGHT -->
+                <div class="product-card">
+
+                    <img src="eight.jpg"
+                         alt="Eight">
+
+                    <h2>Eight</h2>
+
+                    <div class="price">
+                        Price: ₱150
+                    </div>
+
+                    <p>
+                        A stylish and long-lasting
+                        scent for special occasions.
+                    </p>
+
+                    <a href="products/eight.html">
+                        View details →
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
 
         <p>
-            A light and refreshing fragrance suitable for daily activities.
+            © 2026 Jerfume Shop.
+            All Rights Reserved.
         </p>
 
-        <a href="/products/scent.html">View details →</a>
-    </div>
-
-
-    <!-- 3. EIGHT -->
-    <div class="product-card">
-        <img src="eight.jpg" alt="Eight">
-
-        <h2>Eight</h2>
-
-        <div class="price">
-            Price: ₱150
-        </div>
-
-        <p>
-            A stylish and long-lasting scent for special occasions.
-        </p>
-
-        <a href="products/eight.html">View details →</a>
-    </div>
+    </footer>
 
 </div>
+
+</body>
+</html>

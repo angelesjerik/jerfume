@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Atlantis | Jerfume</title>
 
     <link rel="stylesheet" href="../style.css">
@@ -12,88 +10,86 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="site-header">
+        <div class="logo">
+            <a href="../index.html">Jerfume</a>
+        </div>
 
-        <h1>Jerfume</h1>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
+        <nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../contact.html">Contact</a>
         </nav>
-
     </header>
 
 
-    <main class="atlantis-product">
+    <!-- MAIN -->
+    <main class="product-page">
 
-        <div class="atlantis-card">
+        <section class="product-card">
 
-            <div class="atlantis-image">
-
-                <!-- KUNG NASA ROOT FOLDER ANG ATLANTIS IMAGE -->
-                <img src="../scent.jpg" alt="Scent Perfume">
-
+            <!-- IMAGE -->
+            <div class="product-image">
+                <img src="../scent.jpg" alt="Atlantis Body Spray">
             </div>
 
 
-            <div class="atlantis-details">
+            <!-- DETAILS -->
+            <div class="product-info">
 
-                <h1>Daily Scent: Sunday Morning</h1>
+                <h1>Daily scent </h1>
 
-                <div class="detail-row">
+                <div class="info-row">
                     <strong>Price</strong>
                     <em>₱75</em>
                 </div>
 
-                <div class="detail-row">
+                <div class="info-row">
                     <strong>In Stock</strong>
                     <em>Yes</em>
                 </div>
 
-                <div class="detail-row">
+                <div class="info-row">
                     <strong>Type</strong>
-                    <em>Cologne</em>
+                    <em>Fragrance / cologne</em>
                 </div>
 
-                <div class="detail-row">
+                <div class="info-row">
                     <strong>Scent</strong>
                     <em>Fresh and refreshing</em>
                 </div>
 
 
-                <h2>Why Choose Daily Scent: Sunday Morning</h2>
+                <!-- WHY CHOOSE -->
+                <div class="why-atlantis">
 
-                <ul class="benefits">
-                    <li>Fresh and refreshing scent</li>
-                    <li>Suitable for everyday activities</li>
-                    <li>Easy to carry and use</li>
-                </ul>
+                    <h2>Why Choose Atlantis?</h2>
+
+                    <ul>
+                        <li>Fresh and refreshing scent</li>
+                        <li>Suitable for everyday activities</li>
+                        <li>Easy to carry and use</li>
+                    </ul>
+
+                </div>
 
 
+                <!-- QUANTITY -->
                 <div class="quantity">
                     <label for="quantity">Quantity:</label>
-
-                    <input
-                        type="number"
-                        id="quantity"
-                        value="1"
-                        min="1"
-                    >
+                    <input type="number" id="quantity" value="1" min="1">
                 </div>
 
 
-                <div class="product-buttons">
-
-                    <button>Add to Cart</button>
-
-                    <button>Delivery Method</button>
-
+                <!-- BUTTONS -->
+                <div class="buttons">
+                    <button type="button">Add to Cart</button>
+                    <button type="button">Delivery Method</button>
                 </div>
 
 
+                <!-- OPTIONAL EXTRAS -->
                 <fieldset class="extras">
 
                     <legend>🎁 Optional Extras</legend>
@@ -116,7 +112,8 @@
                 </fieldset>
 
 
-                <div class="order">
+                <!-- EMAIL -->
+                <div class="order-email">
 
                     <label for="email">Email:</label>
 
@@ -126,21 +123,23 @@
                         placeholder="you@example.com"
                     >
 
-                    <button>Submit Order</button>
+                    <button type="submit">
+                        Submit Order
+                    </button>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
     </main>
 
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="site-footer">
         © 2026 Jerfume Shop. All rights reserved.
     </footer>
 
 </body>
-
 </html>
