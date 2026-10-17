@@ -75,6 +75,31 @@
                 </div>
 
 
+<!-- JERFUME SHOP DECISIONS -->
+<section class="shop-decisions">
+    
+    <p>Check our stock, delivery, and shop status.</p>
+
+    
+<div class="decision-card">
+    <h3>Stock Status</h3>
+    <p id="stock-status">Loading...</p>
+</div>
+
+<div class="decision-card">
+    <h3>Delivery Information</h3>
+    <p id="delivery-status">Loading...</p>
+    <p id="final-total">Loading...</p>
+</div>
+
+<div class="decision-card">
+    <h3>Shop Availability</h3>
+    <p id="shop-status">Loading...</p>
+</div>
+
+
+
+
                 <!-- QUANTITY -->
                 <div class="quantity">
                     <label for="quantity">Quantity:</label>
@@ -127,9 +152,21 @@
                         Submit Order
                     </button>
 
-                </div>
+                </div></section>
 
-            </div>
+            <section class="comparison">
+    <h2>Check price</h2>
+
+    <label for="price">Enter Product Price:</label>
+    <input type="number" id="price" placeholder="Enter price">
+
+    <button onclick="checkPrice()">Check Price</button>
+
+    <div id="ifResult"></div>
+    <div id="ternaryResult"></div>
+    <div id="typeResult"></div>
+</section>
+
 
         </section>
 

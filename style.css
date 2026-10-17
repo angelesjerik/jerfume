@@ -1421,3 +1421,83 @@ main {
             repeat(2, minmax(0, 1fr)) !important;
     }
 }
+.comparison {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #eaf6ff;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px #00000020;
+}
+
+.comparison h2 {
+    color: #1769aa;
+}
+
+.comparison input {
+    width: 85%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #8bbde5;
+    border-radius: 8px;
+}
+
+.comparison button {
+    padding: 12px 20px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.comparison button:hover {
+    background: #0d47a1;
+}
+
+.comparison div {
+    margin-top: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+}
+
+
+/* JERFUME SHOP DECISIONS */
+.shop-decisions {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.shop-decisions h2 {
+    color: #8b4560;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.shop-decisions > p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.decision-card {
+    background: #fff8fa;
+    border: 1px solid #e8c5d2;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.decision-card h3 {
+    color: #8b4560;
+}
+
+.decision-card p {
+    color: #333;
+    font-size: 16px;
+}
